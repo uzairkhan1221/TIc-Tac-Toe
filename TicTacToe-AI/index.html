@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+    <p class="subtext">vs Friend or AI</p>
+
+    <select id="gameMode" onchange="startGame()">
+      <option value="multiplayer">Multiplayer</option>
+      <option value="easy">Easy AI</option>
+      <option value="medium">Medium AI</option>
+      <option value="hard">Hard AI</option>
+    </select>
+
+    <div id="board" class="board"></div>
+    <div id="status" class="status"></div>
+
+    <div class="scores">
+      <div>X: <span id="xScore">0</span></div>
+      <div>O: <span id="oScore">0</span></div>
+      <div>Tie: <span id="tieScore">0</span></div>
+    </div>
+
+    <button class="button" onclick="startGame()">Restart</button>
+    <div class="toggle-dark" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
